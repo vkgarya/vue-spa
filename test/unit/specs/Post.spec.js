@@ -23,7 +23,7 @@ describe('Post.vue', () => {
     expect(comp.$el.querySelector('.card-footer-item').getAttribute('href'))
       .to.equal('http://www.pluralsight.com')
 
-    comp.link = "http://fullstackweekly.com"
+    comp.link = 'http://fullstackweekly.com'
 
     Vue.nextTick(() => {
       expect(comp.$el.querySelector('.card-footer-item').getAttribute('href'))
