@@ -1,0 +1,15 @@
+{
+  "presets": [
+    //We want to use the ES2015 or ES6 rules without the modules rules since webpack is handling that for us, and use stage-2 ECMAScript features as well. There are some specs that aren't completely defined yet, but are in the stage-2 status. The spread syntax, for example, is in stage 2.
+    [
+      "es2015",
+      {
+        "modules":false
+      }
+    ],
+    "stage-2"
+  ],
+  "ignore": [
+    "node_modules/"
+  ]
+}
